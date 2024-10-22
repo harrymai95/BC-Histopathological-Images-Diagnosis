@@ -17,7 +17,7 @@ def predict(img_path, model, class_names):
   return img, predicted_class, accuracy
 
 st.title('Breast Cancer Classification App by :blue[Histopathological Images]')
-note1 = '''Authors: Hao Mai Xuan, Duong Cao Thi Thuy, Yankuba B. Manga\n
+note1 = '''Authors: **Hao Mai Xuan, Duong Cao Thi Thuy, Yankuba B. Manga**\n
 Product from master thesis at The Master Program in Smart Healthcare Management of National Taipei University (Taiwan).
 The product uses open data (BreakHis Dataset), so the classification results still need further consultation from specialists before using.\n
 The aim of this application is to diagnose between benign and malignant from histopathological images.'''
@@ -77,7 +77,7 @@ else:
 st.subheader(":blue[Upload] Histopathological Image",divider="gray")
 st.markdown("Please select an image that has the same magnification as the selected model!")
 with st.form("my-form", clear_on_submit=True):
-  uploaded_files = st.file_uploader("Upload Image Here!",type=["jpg", "jpeg", "png"], accept_multiple_files=True)
+  uploaded_files = st.file_uploader("Upload image(s) here and Please wait until the image(s) you selected have been fully uploaded!",type=["jpg", "jpeg", "png"], accept_multiple_files=True)
   submitted = st.form_submit_button("**:red[CLASSIFY!]**")
   if submitted and uploaded_files is not None:
     st.write("Uploaded and classified successfully!")
