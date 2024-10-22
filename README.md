@@ -1,1 +1,1 @@
-# BC-Histopathologicalhistopathological-Images-Diagnosis
+# Breast Cancer Histopathological Images Diagnosis
