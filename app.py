@@ -3,6 +3,7 @@ import numpy as np
 from PIL import Image
 import streamlit as st
 import keras
+import gdown
 
 def predict(img_path, model, class_names):
   #Input image
@@ -36,7 +37,8 @@ selected_model = st.selectbox("Which model do you want to use?",('Mixed', '40x',
 @st.cache_resource
 def load_model(selected_model):
   if selected_model == 'Mixed':
-    mdlmixed = tf.keras.models.load_model("/content/drive/MyDrive/Colab Notebooks/Save/mdlmixed.keras")
+    gdown.download("https://drive.google.com/file/d/1-9hFzDES7FgSBQcBKprHEUvLTQwAuEzn/view?usp=sharing",output="models/mdlmixed.keras", fuzzy=True)
+    mdlmixed = tf.keras.models.load_model("models/mdlmixed.keras")
     return mdlmixed
   elif selected_model == '40x':
     mdl40x = tf.keras.models.load_model("/content/drive/MyDrive/Colab Notebooks/Save/mdlmixed.keras")
