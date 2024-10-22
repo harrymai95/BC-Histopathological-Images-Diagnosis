@@ -38,7 +38,7 @@ selected_model = st.selectbox("Which model do you want to use?",('Mixed', '40x',
 def load_model(selected_model):
   if selected_model == 'Mixed':
     gdown.download("https://drive.google.com/file/d/1-9hFzDES7FgSBQcBKprHEUvLTQwAuEzn/view?usp=sharing",output="mdlmixed.keras", fuzzy=True)
-    mdlmixed = tf.keras.models.load_model("models/mdlmixed.keras")
+    mdlmixed = tf.keras.models.load_model("mdlmixed.keras")
     return mdlmixed
   elif selected_model == '40x':
     mdl40x = tf.keras.models.load_model("/content/drive/MyDrive/Colab Notebooks/Save/mdlmixed.keras")
