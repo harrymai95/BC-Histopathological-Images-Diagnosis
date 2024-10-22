@@ -5,18 +5,13 @@ import matplotlib.pyplot as plt
 import os
 from PIL import Image
 import streamlit as st
+import keras
 
-os.chdir('/content/drive/MyDrive/Colab Notebooks/Save')
-import mdlmixed
-mdlmixed = mdlmixed.load_model()
-import mdl40x
-mdl40x = mdl40x.load_model()
-import mdl100x
-mdl100x = mdl100x.load_model()
-import mdl200x
-mdl200x = mdl200x.load_model()
-import mdl400x
-mdl400x = mdl400x.load_model()
+mdlmixed = keras.models.load_model("models/mdlmixedl.keras", compile=True)
+mdl40x = keras.models.load_model("models/mdl40x.keras", compile=True)
+mdl100x = keras.models.load_model("models/mdl100x.keras", compile=True)
+mdl200x = keras.models.load_model("models/mdl200x.keras", compile=True)
+mdl400x = keras.models.load_model("models/mdl400x.keras", compile=True)
 
 def predict(img_path, model, class_names):
   #Input image
