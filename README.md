@@ -1,4 +1,4 @@
-# <h4 align="center">Breast Cancer Histopathological Images Diagnosis WebApp </h4>
+# <h4 align="center"> <br> Breast Cancer Histopathological Images Diagnosis WebApp <br> </h4>
 
 This application is designed to distinguish between benign and malignant conditions using histopathological images in Breast Cancer. The software offers several models: mixed, 40x, 100x, 200x, and 400x. The choice of model is determined by the magnification of the image you wish to classify.
 
