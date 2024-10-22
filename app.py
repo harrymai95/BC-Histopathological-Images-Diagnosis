@@ -60,21 +60,16 @@ model = load_model(selected_model)
 
 st.write(f"You selected: **:red[{selected_model}]** model")
 if selected_model == 'Mixed':
-  model = mdlmixed
   st.write("This model is applied in cases where the magnification level of the image to be classified cannot be determined. Therefore, it not only helps classify the two classes but also identifies the magnification level of the image.")
 elif selected_model == '40x':
-  model = mdl40x
   st.write("This model is applied in cases where the magnification level of the image to be classified is 40x.")
 elif selected_model == '100x':
-  model = mdl100x
   st.write("This model is applied in cases where the magnification level of the image to be classified is 100x.")
 elif selected_model == '200x':
-  model = mdl200x
   st.write("This model is applied in cases where the magnification level of the image to be classified is 200x.")
 elif selected_model == '400x':
-  model = mdl400x
   st.write("This model is applied in cases where the magnification level of the image to be classified is 400x.")
-if model == mdlmixed:
+if selected_model == 'Mixed':
   class_names = ['Benign - 40x','Malignant - 40x','Benign - 100x','Malignant - 100x','Benign - 200x','Malignant - 200x','Benign - 400x','Malignant - 400x']
 else:
   class_names = ['Benign','Malignant']
