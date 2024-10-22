@@ -1,5 +1,6 @@
 # Breast Cancer Histopathological Images Diagnosis 🩺 💊 💉
-medical-banner-with-doctor-wearing-goggles.jpg
+![IMAGE_DESCRIPTION] medical-banner-with-doctor-wearing-goggles.jpg
+
 Authors: Hao Mai Xuan, Duong Cao Thi Thuy, Yankuba B. Manga
 Product from master thesis at The Master Program in Smart Healthcare Management of National Taipei University (Taiwan). The product uses open data (BreakHis Dataset), so the classification results still need further consultation from specialists before using.
 The aim of this application is to diagnose between benign and malignant from histopathological images.
