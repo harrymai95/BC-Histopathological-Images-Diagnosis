@@ -4,7 +4,7 @@
 This application is designed to distinguish between benign and malignant conditions using histopathological images in Breast Cancer. The software offers several models: mixed, 40x, 100x, 200x, and 400x. The choice of model is determined by the magnification of the image you wish to classify.
 
 ## Main API
-![Alt text](https://skillicons.dev/icons?i=js,html,css,wasm)
+![Alt text](https://www.google.com/url?sa=i&url=https%3A%2F%2Fgithub.com%2Ftensorflow%2Ftensorflow&psig=AOvVaw0BHeQ_GOzwOiA6QamgxTsP&ust=1729695819840000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCMCQtZuhookDFQAAAAAdAAAAABAE)
 
 
 ## Contributors
