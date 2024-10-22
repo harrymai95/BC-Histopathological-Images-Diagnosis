@@ -7,6 +7,6 @@ Product from master thesis at The Master Program in Smart Healthcare Management 
 
 The aim of this application is to diagnose between benign and malignant from histopathological images.
 
-# Main API
+## Main API
 
 The models available in this software are: mixed, 40x, 100x, 200x and 400x. The model you want to use depends on the magnification of the image you want to classify.
