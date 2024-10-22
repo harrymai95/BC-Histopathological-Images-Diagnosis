@@ -5,10 +5,10 @@ Link to our WebApp: https://bc-histopathological-images-diagnosis.streamlit.app/
 This application is designed to distinguish between benign and malignant conditions using histopathological images in Breast Cancer. The software offers several models: mixed, 40x, 100x, 200x, and 400x. The choice of model is determined by the magnification of the image you wish to classify.
 
 ## API
-<img src="https://logos-world.net/wp-content/uploads/2020/12/MATLAB-Symbol.jpg" height="50"> <img src="https://www.python.org/static/community_logos/python-logo-master-v3-TM.png" height="50"> <img src="https://algotrading101.com/learn/wp-content/uploads/2021/05/Google-Colab-Guide-e1620759490851.jpg" height="50"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9TzXB7f5klLOXyn-vUTHxkNNGeNJflGcbxQ&s" height="50">
+<img src="https://logos-world.net/wp-content/uploads/2020/12/MATLAB-Symbol.jpg" height="50"> <img src="https://www.python.org/static/community_logos/python-logo-master-v3-TM.png" height="50"> <img src="https://styles.redditmedia.com/t5_wgg5k/styles/image_widget_ykqs4s3b4b4d1.jpeg?format=pjpg&s=7f81e29b9abf0118f8d6581e801e47a61a650129" height="50"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9TzXB7f5klLOXyn-vUTHxkNNGeNJflGcbxQ&s" height="50">
 
 ## Libraries
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEsqbuvRgmIsxTT1R_bCdv8txFKkw2ylx5Lg&s" height="50">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEsqbuvRgmIsxTT1R_bCdv8txFKkw2ylx5Lg&s" height="50"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/NumPy_logo_2020.svg/1200px-NumPy_logo_2020.svg.png" height="50">
 
 ## Contributors
 
