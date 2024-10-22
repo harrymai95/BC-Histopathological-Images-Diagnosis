@@ -36,34 +36,43 @@ selected_model = st.selectbox("Which model do you want to use?",('Mixed', '40x',
 #Load model
 @st.cache_resource
 def load_model(selected_model):
+  gdown.download("https://drive.google.com/file/d/1-9hFzDES7FgSBQcBKprHEUvLTQwAuEzn/view?usp=sharing",output="mdlmixed.keras", fuzzy=True)
+  gdown.download("https://drive.google.com/file/d/1-FO8EdMgAU62w4lTEaO0ebuLhaoTERZH/view?usp=sharing",output="mdl40x.keras", fuzzy=True)
+  gdown.download("https://drive.google.com/file/d/1-IarjHPol74vqbqu61WWhAPBzKzsKL2i/view?usp=sharing",output="mdl100x.keras", fuzzy=True)
+  gdown.download("https://drive.google.com/file/d/1-GWtcdxRbOINCNusMqrreh3fAx_CXK8B/view?usp=sharing",output="mdl200x.keras", fuzzy=True)  
+  gdown.download("https://drive.google.com/file/d/1--6MCj9fwXhs_m355yAiBF5dhDc-BHPh/view?usp=sharing",output="mdl400x.keras", fuzzy=True)
   if selected_model == 'Mixed':
-    gdown.download("https://drive.google.com/file/d/1-9hFzDES7FgSBQcBKprHEUvLTQwAuEzn/view?usp=sharing",output="mdlmixed.keras", fuzzy=True)
     mdlmixed = tf.keras.models.load_model("mdlmixed.keras")
     return mdlmixed
   elif selected_model == '40x':
-    mdl40x = tf.keras.models.load_model("/content/drive/MyDrive/Colab Notebooks/Save/mdlmixed.keras")
+    mdl40x = tf.keras.models.load_model("mdl40x.keras")
     return mdl40x
   elif selected_model == '100x':
-    mdl100x = tf.keras.models.load_model("/content/drive/MyDrive/Colab Notebooks/Save/mdlmixed.keras")
+    mdl100x = tf.keras.models.load_model("mdl100x.keras")
     return mdl100x
   elif selected_model == '200x':
-    mdl200x = tf.keras.models.load_model("/content/drive/MyDrive/Colab Notebooks/Save/mdlmixed.keras")
+    mdl200x = tf.keras.models.load_model("mdl200x.keras")
     return mdl200x
   elif selected_model == '400x':
-    mdl400x = tf.keras.models.load_model("/content/drive/MyDrive/Colab Notebooks/Save/mdlmixed.keras")
+    mdl400x = tf.keras.models.load_model("mdl200x.keras")
     return mdl400x
 model = load_model(selected_model)
 
 st.write(f"You selected: **:red[{selected_model}]** model")
 if selected_model == 'Mixed':
+  model = mdlmixed
   st.write("This model is applied in cases where the magnification level of the image to be classified cannot be determined. Therefore, it not only helps classify the two classes but also identifies the magnification level of the image.")
 elif selected_model == '40x':
+  model = mdl40x
   st.write("This model is applied in cases where the magnification level of the image to be classified is 40x.")
 elif selected_model == '100x':
+  model = mdl100x
   st.write("This model is applied in cases where the magnification level of the image to be classified is 100x.")
 elif selected_model == '200x':
+  model = mdl200x
   st.write("This model is applied in cases where the magnification level of the image to be classified is 200x.")
 elif selected_model == '400x':
+  model = mdl400x
   st.write("This model is applied in cases where the magnification level of the image to be classified is 400x.")
 if model == mdlmixed:
   class_names = ['Benign - 40x','Malignant - 40x','Benign - 100x','Malignant - 100x','Benign - 200x','Malignant - 200x','Benign - 400x','Malignant - 400x']
